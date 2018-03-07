@@ -1,0 +1,50 @@
+.reveal .fullscreen-element-slides {
+    /* SHAME */
+     width: 100vw !important;
+     height: 100vh !important;
+     zoom: 1 !important;
+}
+
+.fullscreen-element-slides ~ aside.controls {
+    display: none !important;
+}
+
+.fullscreen-element-slides ~ .fullscreen-element-close {
+    display: block;
+}
+
+.reveal .fullscreen-element-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    z-index: 101;
+    pointer-events: all;
+    opacity: .4;
+    background-color: white;
+    transition: opacity .3s linear;
+}
+
+.reveal .fullscreen-element-close:hover {
+    opacity: 1;
+}
+
+.fullscreen-element-slide {
+    left: 0;
+    right: 0;
+    top: 0 !important;
+}
+
+.fullscreen-element-slide [data-allow-full-screen] {
+    min-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
